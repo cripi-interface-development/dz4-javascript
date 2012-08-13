@@ -152,10 +152,11 @@ ul.taj {
         visibility: hidden;
         overflow: hidden;
         content: '';
-        display: inline-block;
+        display:inline-block;
+        .ie7-inline-block();
     }
     > li  {
-        
+
         text-align: left;
         /* Востанавливаем у потомков, кроме последнего*/
         line-height: normal;
@@ -166,7 +167,8 @@ ul.taj {
         display:inline-block;
         .ie7-inline-block();
         > div{
-            .in-block();
+            display:inline-block;
+            .ie7-inline-block();
             text-align: left;
 
         }
@@ -179,7 +181,7 @@ ul.taj {
 .vab{vertical-align:bottom}
 .vaba{vertical-align: baseline}
 
-// выравнивание
+//// выравнивание
 .left{float:left;}
 .right{float:right;}
 .clear{clear:both; font-size: 1px; line-height: 1px;}
