@@ -247,13 +247,28 @@ textarea.resize_auto{
 
 // внуртри нее сылки
 
-a.t-decoration,
-.t-decoration a{
+.td-none{
+  text-decoration: none !important;
+}
+.td-dashed{
   text-decoration: none;
+  border-bottom:1px dashed;
+  &.active,
   &:hover{
-    text-decoration: underline;
+    border-color:transparent;
+    text-decoration: none;
   }
 }
+.td-dotted{
+  text-decoration: none;
+  border-bottom:1px dotted;
+  &.active,
+  &:hover{
+    border-color:transparent;
+    text-decoration: none;
+  }
+}
+
 //  <a clss=blokc >
 //      <span>  TEXT  </span>
 //  </a>
@@ -304,27 +319,6 @@ a.t-decoration,
       text-decoration: none;
       border-color:transparent;
     }
-  }
-}
-.td-none{
-  text-decoration: none !important;
-}
-.td-dashed{
-  text-decoration: none;
-  border-bottom:1px dashed;
-  &.active,
-  &:hover{
-    border-color:transparent;
-    text-decoration: none;
-  }
-}
-.td-dotted{
-  text-decoration: none;
-  border-bottom:1px dotted;
-  &.active,
-  &:hover{
-    border-color:transparent;
-    text-decoration: none;
   }
 }
 
