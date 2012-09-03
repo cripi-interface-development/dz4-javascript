@@ -3,7 +3,6 @@
 @import 'arrow.less';
 
 .p0 {padding: 0px !important;}
-.p5 {padding: 5px;}
 .p10 {padding: 10px;}
 .p15 {padding: 15px;}
 .p20 {padding: 20px;}
@@ -46,67 +45,66 @@
 .pt70 {padding-top: 70px;}
 .pt80 {padding-top: 80px;}
 
-.m0 {margin: 0px !important;}
-.m10 {margin: 10px;}
-.m20 {margin: 20px;}
-.m30 {margin: 30px;}
-.m40 {margin: 40px;}
-.m50 {margin: 50px;}
-.m60 {margin: 60px;}
-.m70 {margin: 70px;}
-.m80 {margin: 80px;}
+.m0 {margin-rgin: 0px !important;}
+.m10 {margin-rgin: 10px;}
+.m20 {margin-rgin: 20px;}
+.m30 {margin-rgin: 30px;}
+.m40 {margin-rgin: 40px;}
+.m50 {margin-rgin: 50px;}
+.m60 {margin-rgin: 60px;}
+.m70 {margin-rgin: 70px;}
+.m80 {margin-rgin: 80px;}
 
-.mb0 {mbottom: 0px !important;}
-.mb5 {mbottom: 5px !important;}
-.mb10 {mbottom: 10px;}
-.mb15 {mbottom: 15px;}
-.mb20 {mbottom: 20px;}
-.mb26 {mbottom: 26px;}
-.mb30 {mbottom: 30px;}
-.mb36 {mbottom: 36px;}
-.mb40 {mbottom: 40px;}
-.mb50 {mbottom: 50px;}
-.mb60 {mbottom: 60px;}
-.mb70 {mbottom: 70px;}
-.mb80 {mbottom: 80px;}
+.mb0 {margin-bottom: 0px !important;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb26 {margin-bottom: 26px;}
+.mb30 {margin-bottom: 30px;}
+.mb36 {margin-bottom: 36px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.mb60 {margin-bottom: 60px;}
+.mb70 {margin-bottom: 70px;}
+.mb80 {margin-bottom: 80px;}
 
 
-.ml0 {mleft: 0px !important;}
-.ml10 {mleft: 10px;}
-.ml20 {mleft: 20px;}
-.ml30 {mleft: 30px;}
-.ml40 {mleft: 40px;}
-.ml50 {mleft: 50px;}
-.ml60 {mleft: 60px;}
-.ml70 {mleft: 70px;}
-.ml80 {mleft: 80px;}
-.ml90 {mleft: 90px;}
-.ml100 {mleft: 100px;}
-.ml140 {mleft: 140px;}
+.ml0 {margin-left: 0px !important;}
+.ml10 {margin-left: 10px;}
+.ml20 {margin-left: 20px;}
+.ml30 {margin-left: 30px;}
+.ml40 {margin-left: 40px;}
+.ml50 {margin-left: 50px;}
+.ml60 {margin-left: 60px;}
+.ml70 {margin-left: 70px;}
+.ml80 {margin-left: 80px;}
+.ml90 {margin-left: 90px;}
+.ml100 {margin-left: 100px;}
+.ml140 {margin-left: 140px;}
 
-.mr0 {mright: 0px !important;}
-.mr10 {mright: 10px;}
-.mr20 {mright: 20px;}
-.mr30 {mright: 30px;}
-.mr40 {mright: 40px;}
-.mr50 {mright: 50px;}
-.mr60 {mright: 60px;}
-.mr70 {mright: 70px;}
-.mr80 {mright: 80px;}
-.mr90 {mright: 90px;}
-.mr100 {mright: 100px;}
+.mr0 {margin-right: 0px !important;}
+.mr10 {margin-right: 10px;}
+.mr20 {margin-right: 20px;}
+.mr30 {margin-right: 30px;}
+.mr40 {margin-right: 40px;}
+.mr50 {margin-right: 50px;}
+.mr60 {margin-right: 60px;}
+.mr70 {margin-right: 70px;}
+.mr80 {margin-right: 80px;}
+.mr90 {margin-right: 90px;}
+.mr100 {margin-right: 100px;}
 
-.mt0 {mtop: 0px !important;}
-.mt10 {mtop: 10px;}
-.mt20 {mtop: 20px;}
-.mt30 {mtop: 30px;}
-.mt40 {mtop: 40px;}
-.mt50 {mtop: 50px;}
-.mt60 {mtop: 60px;}
-.mt70 {mtop: 70px;}
-.mt80 {mtop: 80px;}
-.mt90 {mtop: 90px;}
-.mt100 {mtop: 100px;}
+.mt0 {margin-top-top: 0px !important;}
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt60 {margin-top: 60px;}
+.mt70 {margin-top: 70px;}
+.mt80 {margin-top: 80px;}
+.mt90 {margin-top: 90px;}
+.mt100 {margin-top: 100px;}
 
 .fz10 { font-size: 10px;  }
 .fz11 { font-size: 11px; }
@@ -136,43 +134,43 @@
 .taj{ text-align: justify;}
 // делает между блоками одинаковое растояние
 ul.taj {
-    margin: 0;
-    text-align: justify;
-    /* Обнуляем для родителя*/
-    line-height: 0;
-    font-size: 1px; /* 1px для Opera */
-    /* Лекарство для IE6-7*/
-    text-justify: newspaper;
-    zoom:1;
-    /* Включаем в работу последнюю строку*/
-    text-align-last: justify;
-    &:after {
-        width: 100%;
-        height: 0px;
-        visibility: hidden;
-        overflow: hidden;
-        content: '';
-        display:inline-block;
-        .ie7-inline-block();
-    }
-    > li  {
+  margin: 0;
+  text-align: justify;
+/* Обнуляем для родителя*/
+  line-height: 0;
+  font-size: 1px; /* 1px для Opera */
+/* Лекарство для IE6-7*/
+  text-justify: newspaper;
+  zoom:1;
+/* Включаем в работу последнюю строку*/
+  text-align-last: justify;
+  &:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display:inline-block;
+    .ie7-inline-block();
+  }
+  > li  {
 
-        text-align: left;
-        /* Востанавливаем у потомков, кроме последнего*/
-        line-height: normal;
-        font-size: 14px;
-        /* Без него в Opera будет отступ под элементами */
-        vertical-align: top;
-        /* эмуляция inline-block для IE6-7*/
-        display:inline-block;
-        .ie7-inline-block();
-        > div{
-            display:inline-block;
-            .ie7-inline-block();
-            text-align: left;
+    text-align: left;
+  /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+  /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+  /* эмуляция inline-block для IE6-7*/
+    display:inline-block;
+    .ie7-inline-block();
+    > div{
+      display:inline-block;
+      .ie7-inline-block();
+      text-align: left;
 
-        }
     }
+  }
 }
 
 //вертикальное выравнивание
@@ -224,12 +222,12 @@ a.white:hover{ color:@white;}
 .border_grey {border: 1px solid @grayLighter}
 .cursor{cursor:pointer }
 .underline {
-        text-decoration:underline;
-    }
+  text-decoration:underline;
+}
 
 // авто расширение
 textarea.resize_auto{
-	resize: none;
+  resize: none;
 }
 
 // ССЫЛКИ
@@ -251,65 +249,65 @@ textarea.resize_auto{
 
 a.t-decoration,
 .t-decoration a{
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-    }
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 //  <a clss=blokc >
 //      <span>  TEXT  </span>
 //  </a>
 
 .t-decorationNorm{
+  text-decoration: none;
+  span{
+    text-decoration: underline;
+  }
+  &:hover span{
     text-decoration: none;
+  }
+  .active &{
     span{
-        text-decoration: underline;
+      text-decoration: none;
     }
-    &:hover span{
-            text-decoration: none;
-        }
-    .active &{
-        span{
-            text-decoration: none;
-        }
-    }
+  }
 }
 .t-decorationDotted{
+  text-decoration: none;
+  span{
     text-decoration: none;
+    border-bottom:1px dotted;
+  }
+  &:hover span{
+    border-color:transparent;
+    text-decoration: none;
+  }
+  .active &{
     span{
-        text-decoration: none;
-        border-bottom:1px dotted;
+      text-decoration: none;
+      border-color:transparent;
     }
-    &:hover span{
-            border-color:transparent;
-            text-decoration: none;
-        }
-    .active &{
-        span{
-            text-decoration: none;
-            border-color:transparent;
-        }
-    }
+  }
 }
 .t-decorationDashed{
+  text-decoration: none;
+  span{
     text-decoration: none;
+    border-bottom:1px dashed;
+  }
+  &:hover span{
+    border-color:transparent;
+    text-decoration: none;
+  }
+  .active &{
     span{
-        text-decoration: none;
-        border-bottom:1px dashed;
+      text-decoration: none;
+      border-color:transparent;
     }
-    &:hover span{
-            border-color:transparent;
-            text-decoration: none;
-        }
-    .active &{
-        span{
-            text-decoration: none;
-            border-color:transparent;
-        }
-    }
+  }
 }
 .t-decorationNone{
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 
@@ -317,43 +315,43 @@ a.t-decoration,
 // растягивает картинку по всей ширене контейнера
 .background-size-100(@url){
 
-    background: ~"url('@{url}')" no-repeat ;
-    .background-size( 100% 100%);
-    filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
-    -ms-filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
+  background: ~"url('@{url}')" no-repeat ;
+  .background-size( 100% 100%);
+  filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
+  -ms-filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
 
 }
 //убераем пунктир вокруг сылок
 a:focus{
-    outline:none;
+  outline:none;
 }
 button:focus{
-    outline:none;
+  outline:none;
 }
 /***********************************     ТАБЛИЦЫ     ****************************************************/
 //сброс талиц
 .table-clear{
-    width:100%;
-    border:0;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin:0;
+  width:100%;
+  border:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:0;
+  padding:0;
+  td,th{
+    margin: 0;
     padding:0;
-    td,th{
-        margin: 0;
-        padding:0;
-        vertical-align: top;
-    }
+    vertical-align: top;
+  }
 }
 //квадрат
 .cube{
-    vertical-align:middle;
-    line-height:inherit;
-    display:inline-block;
-    .ie7-inline-block();
-    .square(3px); //(height = width)
-    .opacity(50);//(1 — 100)
-    &_white{
+  vertical-align:middle;
+  line-height:inherit;
+  display:inline-block;
+  .ie7-inline-block();
+  .square(3px); //(height = width)
+  .opacity(50);//(1 — 100)
+  &_white{
     background-color:#fff;
-    }
+  }
 }
