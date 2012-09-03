@@ -216,22 +216,24 @@
     </div>
 
 */
-.curved-vt-2(@r,@g,@b) {
+.curved-vt-2(@sizen:10px,@color: @white, @alpha: 0.6) {
     position:relative;
+    z-index:0;
     &:before,
     &:after {
         content:"";
         position:absolute;
-        z-index:0;
+        z-index:-1;
     }
     
     &:before {
-        top:10px;
-        bottom:10px;
+        top:@sizen;
+        bottom:@sizen;
         left:0;
         right:0;
-        .box-shadow(0 0 15px rgba(@r,@g,@b,0.6)); //@shadow: inset  0 1px 3px rgba(0,0,0,.25)
-        .border-radius(~"10px / 100px");
+
+      .box-shadow(0 0 @sizen*1.5  hsla(hue(@color), saturation(@color), lightness(@color), @alpha)); //@shadow: inset  0 1px 3px rgba(0,0,0,.25)
+        .border-radius( @sizen ~"/ 100px");
    }
 }
 
