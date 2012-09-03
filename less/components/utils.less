@@ -179,7 +179,7 @@ ul.taj {
 .vab{vertical-align:bottom}
 .vaba{vertical-align: baseline}
 
-//// выравнивание
+// выравнивание
 .left{float:left;}
 .right{float:right;}
 .clear{clear:both; font-size: 1px; line-height: 1px;}
@@ -200,7 +200,7 @@ ul.taj {
 
 
 
-
+//ЦВЕТА
 
 .black{color: @black;  }
 .grayDarker{color:@grayDarker;}
@@ -211,45 +211,25 @@ ul.taj {
 .white{color: @white;}
 .infoText{color: @infoText;}
 
-a.black:hover{color:@black;}
-a.grayDark:hover{ color:@grayDark;}
-a.gray:hover{ color:@gray;}
-a.grayLight:hover{ color:@grayLight;}
-a.grayLight:hover{ color:@grayLight;}
-a.grayLighter:hover{ color:@grayLighter;}
-a.white:hover{ color:@white;}
-
-.border_grey {border: 1px solid @grayLighter}
-.cursor{cursor:pointer }
-.underline {
-  text-decoration:underline;
-}
-
-// авто расширение
-textarea.resize_auto{
-  resize: none;
-}
+a.black:hover{color:darken(@black, 15%);}
+a.grayDark:hover{ color:darken(@grayDark, 15%);}
+a.gray:hover{ color:darken(@gray, 15%);}
+a.grayLight:hover{ color:darken(@grayLight, 15%);}
+a.grayLight:hover{ color:darken(@grayLight, 15%);}
+a.grayLighter:hover{ color:darken(@grayLighter, 15%);}
+a.white:hover{ color:darken(@white, 15%);}
 
 // ССЫЛКИ
-
 .cursor{cursor:pointer }
-// внуртри нее сылки
-.link_in{
-  text-decoration: none;
-  border-bottom: 1px dashed;
-  &:hover{
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-  }
-}
 
-
-
-// внуртри нее сылки
-
+// убрать подчеркиваня у ссылки
 .td-none{
   text-decoration: none !important;
 }
+.td-underline {
+   text-decoration:underline;
+ }
+// внуртри нее сылки
 .td-dashed{
   text-decoration: none;
   border-bottom:1px dashed;
