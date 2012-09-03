@@ -1,6 +1,8 @@
 @import 'shadow.less';
-@import 'form-full.less';
-@import 'arrow.less';
+//@import 'form-full.less';
+//@import 'arrow.less';
+@import '../bootstrap/mixins.less';
+
 
 .p0 {padding: 0px !important;}
 .p10 {padding: 10px;}
@@ -132,7 +134,8 @@
 .tac{text-align:center!important;}
 .tar{text-align:right}
 .taj{ text-align: justify;}
-// делает между блоками одинаковое растояние
+
+//делает между блоками одинаковое растояние
 ul.taj {
   margin: 0;
   text-align: justify;
@@ -172,6 +175,7 @@ ul.taj {
     }
   }
 }
+
 
 //вертикальное выравнивание
 .vat{vertical-align:top}
@@ -228,7 +232,7 @@ a.white:hover{ color:darken(@white, 15%);}
 }
 .td-underline {
    text-decoration:underline;
- }
+}
 // внуртри нее сылки
 .td-dashed{
   text-decoration: none;

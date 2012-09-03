@@ -218,14 +218,11 @@
 */
 .curved-vt-2(@r,@g,@b) {
     position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(@r,@g,@b, 0.3), 0 0 40px rgba(@r,@g,@b, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(@r,@g,@b, 0.3), 0 0 40px rgba(@r,@g,@b, 0.1) inset;
-            box-shadow:0 1px 4px rgba(@r,@g,@b, 0.3), 0 0 40px rgba(@r,@g,@b, 0.1) inset;
     &:before,
     &:after {
         content:"";
         position:absolute;
-        z-index:-2;
+        z-index:0;
     }
     
     &:before {
@@ -233,12 +230,9 @@
         bottom:10px;
         left:0;
         right:0;
-        -webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
-           -moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
-                box-shadow:0 0 15px rgba(0,0,0,0.6);
-        -moz-border-radius:10px / 100px;
-             border-radius:10px / 100px;
-    }
+        .box-shadow(0 0 15px rgba(@r,@g,@b,0.6)); //@shadow: inset  0 1px 3px rgba(0,0,0,.25)
+        .border-radius(~"10px / 100px");
+   }
 }
 
 
