@@ -258,7 +258,7 @@ a.t-decoration,
 //      <span>  TEXT  </span>
 //  </a>
 
-.t-decorationNorm{
+.td-box-norm{
   text-decoration: none;
   span{
     text-decoration: underline;
@@ -272,7 +272,7 @@ a.t-decoration,
     }
   }
 }
-.t-decorationDotted{
+.td-box-dotted{
   text-decoration: none;
   span{
     text-decoration: none;
@@ -289,7 +289,7 @@ a.t-decoration,
     }
   }
 }
-.t-decorationDashed{
+.td-box-dashed{
   text-decoration: none;
   span{
     text-decoration: none;
@@ -306,8 +306,26 @@ a.t-decoration,
     }
   }
 }
-.t-decorationNone{
+.td-none{
   text-decoration: none !important;
+}
+.td-dashed{
+  text-decoration: none;
+  border-bottom:1px dashed;
+  &.active,
+  &:hover{
+    border-color:transparent;
+    text-decoration: none;
+  }
+}
+.td-dotted{
+  text-decoration: none;
+  border-bottom:1px dotted;
+  &.active,
+  &:hover{
+    border-color:transparent;
+    text-decoration: none;
+  }
 }
 
 
@@ -322,9 +340,8 @@ a.t-decoration,
 
 }
 //убераем пунктир вокруг сылок
-a:focus{
-  outline:none;
-}
+.btn:focus,
+a:focus,
 button:focus{
   outline:none;
 }
@@ -341,6 +358,23 @@ button:focus{
     margin: 0;
     padding:0;
     vertical-align: top;
+  }
+}
+.table-no-border{
+  td,th{
+    border:none !important;
+  }
+}
+.table-no-background{
+  background:none;
+  td,th,tr{
+    background:none;
+  }
+  &:hover{
+    background:none;
+    td,th,tr{
+      background:none;
+    }
   }
 }
 //квадрат
