@@ -59,7 +59,7 @@
             background-color:#f6d90f;
             position:relative;
           }
-          div{
+          >div{
             display:table-cell;
             vertical-align:middle;
             width:100%;
@@ -79,7 +79,7 @@
     left:0;
     top:0;
     height:@heightElement;
-    background-color:#FFF;
+    .opacity(0); //(1 — 100)
   }
   .customtabs-panels {
     position:relative;
@@ -95,8 +95,12 @@
   }
   .customtabs-panel-old {
     z-index:4;
+    .opacity(0); //(1 — 100)
+    .transition(100ms opacity);
   }
   .customtabs-panel-active {
     z-index:5;
+    .opacity(100); //(1 — 100)
+    .transition(none);
   }
 }
