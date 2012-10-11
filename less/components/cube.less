@@ -1,0 +1,10 @@
+//квадрат
+.cube(@size:3px,@color:#000,@alfa:100){
+  vertical-align:middle;
+  line-height:inherit;
+  display:inline-block;
+  .ie7-inline-block();
+  .square(@size); //(height = width)
+  .opacity(@alfa);//(1 — 100)
+  background-color:@color;
+}

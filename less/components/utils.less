@@ -1,7 +1,7 @@
 @import 'shadow.less';
-//@import 'form-full.less';
-//@import 'arrow.less';
-@import '../bootstrap/mixins.less';
+@import 'form-full.less';
+@import 'arrow.less';
+@import 'cube.less';
 
 
 .p0 {padding: 0px !important;}
@@ -353,17 +353,5 @@ button:focus{
     td,th,tr{
       background:none;
     }
-  }
-}
-//квадрат
-.cube{
-  vertical-align:middle;
-  line-height:inherit;
-  display:inline-block;
-  .ie7-inline-block();
-  .square(3px); //(height = width)
-  .opacity(50);//(1 — 100)
-  &_white{
-    background-color:#fff;
   }
 }
