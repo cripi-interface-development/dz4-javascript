@@ -1,0 +1,106 @@
+//<div class="customtabs tabs-sliderkit">
+//  <div class="row">
+//    <div class="span10">
+//      <div class="customtabs-panels ">
+//        <div class="customtabs-panel ">
+//          TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+//        </div>
+//        <div class="customtabs-panel ">
+//         TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+//        </div>
+//        <div class="customtabs-panel ">
+//            TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+//        </div>
+//      </div>
+//    </div>
+//    <div class="span6">
+//      <div class="customtabs-nav">
+//        <div class="customtabs-nav-clip">
+//          <ul>
+//            <li>
+//              TEXT
+//            </li>
+//            <li>
+//             TEXT
+//            </li>
+//            <li>
+//              TEXT
+//          </ul>
+//        </div>
+//      </div>
+//    </div>
+//  </div>
+//<div>
+
+.tabs-sliderkit {
+  @heightElement: 400px;
+//  .border-radius(4px);//(@radius: 5px)
+
+  width:100%;
+  background-color:#FFF;
+  height:@heightElement;
+  margin-bottom:16px;
+  .customtabs-nav {
+    text-align:left;
+    .customtabs-nav-clip{
+      ul {
+        height:@heightElement;
+        margin:0;
+        display:table;
+        width:100%;
+        li{
+          border-left:1px solid  #aaaaaa ;
+          background-color:#d6d6d6;
+          list-style:none;
+          display:table-row;
+          width:100%;
+          &.customtabs-selected{
+            z-index: 10;
+            background-color:#f6d90f;
+            position:relative;
+          }
+          >div{
+            display:table-cell;
+            vertical-align:middle;
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .customtabs-panel {
+    z-index:1;
+    position:absolute;
+    overflow:hidden;
+    width:100%;
+    left:0;
+    top:0;
+    height:@heightElement;
+    .opacity(0); //(1 — 100)
+  }
+  .customtabs-panels {
+    position:relative;
+    float:none;
+    margin:0;
+    height:@heightElement;
+    margin-right:-20px;
+    @media (min-width: 1200px) {
+      margin-right:-30px;
+    }
+
+
+  }
+  .customtabs-panel-old {
+    z-index:4;
+    .opacity(0); //(1 — 100)
+    .transition(100ms opacity);
+  }
+  .customtabs-panel-active {
+    z-index:5;
+    .opacity(100); //(1 — 100)
+    .transition(none);
+  }
+}

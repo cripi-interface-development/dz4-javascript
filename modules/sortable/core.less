@@ -1,0 +1,181 @@
+
+/* Bootstrap Data Tables Styles */
+div.dataTables_length label {
+  float: left;
+  text-align: left;
+}
+
+div.dataTables_length select {
+  width: 75px;
+}
+
+div.dataTables_filter label {
+  float: right;
+}
+
+div.dataTables_info {
+  padding-top: 8px;
+}
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0;
+}
+
+table {
+  margin: 1em 0;
+  clear: both;
+}
+
+table.dataTable th:active {
+  outline: none;
+}
+.dataTables_filter input, .dataTables_length select {
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  *zoom: 1;
+}
+
+.sort-index, .hidden {
+  left: -10000px;
+  position: absolute;
+  top: -10000px;
+  visibility: hidden;
+}
+/* Comment Table */
+.comment-table tbody tr td {
+  vertical-align:top;
+}
+.member-avatar img {
+  border: 1px solid #DDDDDD;
+  padding: 1px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+table.member-info {
+  margin-top: 5px;
+  line-height:10px;
+  clear: none;
+}
+table.member-info tbody tr td {
+  line-height:15px;
+}
+.comment-info {
+  margin-bottom:2px;
+}
+.post-toolbar {
+  cursor:pointer;
+}
+tr .post-toolbar {
+  visibility:hidden;
+}
+
+tr:hover .post-toolbar {
+  visibility: visible;
+}
+
+/* Portlets */
+.box {
+  margin-bottom:10px;
+}
+.box h4.box-header {
+  size:10px;
+  padding: 7px 7px;
+  margin: 0;
+  list-style: none;
+  cursor:move;
+}
+
+
+.box-content {
+  padding:10px;
+}
+
+.box-btn {
+  float:right;
+
+  margin-left:2px;
+  margin-right:2px;
+  height: 14px;
+  width: 14px;
+  text-decoration:none;
+  display: block;
+  float: right;
+  overflow: hidden;
+  cursor:pointer;
+  text-align:center;
+
+
+  &:hover{
+    [class^="icon-"],
+    [class*="icon-"] {
+      color:@gray;
+      text-decoration:none;
+    }
+  }
+  [class^="icon-"],
+  [class*="icon-"]  {
+    text-align:center;
+    display:block;
+    vertical-align:middle;
+    line-height:14px;
+    vertical-align:middle;
+    color:@grayLight;
+    &::before{
+    }
+  }
+}
+
+
+
+.box-container-closed {
+  display:none;
+}
+
+/* Portlets */
+.box-placeholder {
+  background-color: #f5f5f5;
+  border: 1px dashed #DDDDDD;
+  display: block;
+/* float: left;*/
+  margin-bottom: 13px !important;
+  margin-left: 1%;
+  margin-right: 0.6%;
+}
+.box-placeholder * {
+  visibility:hidden;
+}
+.column {
+  min-height:20px;
+}
+
+/* Member Box - Side Nav */
+.member-box {
+
+  display:block;
+  padding:10px;
+
+}
+
+img.member-box-avatar {
+  height:50px;
+  width:50px;
+  padding:1px;
+  margin-right:10px;
+  float:left;
+}
+
+
+
+/* Forms */
+.box form {
+  margin:0;
+}
+
+.box .form-actions {
+  margin-bottom:0px;
+}

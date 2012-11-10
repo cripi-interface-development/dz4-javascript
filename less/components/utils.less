@@ -1,0 +1,357 @@
+@import 'shadow.less';
+@import 'form-full.less';
+@import 'arrow.less';
+@import 'cube.less';
+
+
+.p0 {padding: 0px !important;}
+.p10 {padding: 10px;}
+.p15 {padding: 15px;}
+.p20 {padding: 20px;}
+.p30 {padding: 30px;}
+.p40 {padding: 40px;}
+.p50 {padding: 50px;}
+.p60 {padding: 60px;}
+.p70 {padding: 70px;}
+.p80 {padding: 80px;}
+
+.pl0 {padding-left: 0px !important;}
+.pl10 {padding-left: 10px;}
+.pl20 {padding-left: 20px;}
+.pl30 {padding-left: 30px;}
+.pl40 {padding-left: 40px;}
+.pl50 {padding-left: 50px;}
+.pl60 {padding-left: 60px;}
+.pl70 {padding-left: 70px;}
+.pl80 {padding-left: 80px;}
+
+.pr0 {padding-right: 0px !important;}
+.pr10 {padding-right: 10px;}
+.pr20 {padding-right: 20px;}
+.pr30 {padding-right: 30px;}
+.pr40 {padding-right: 40px;}
+.pr50 {padding-right: 50px;}
+.pr60 {padding-right: 60px;}
+.pr70 {padding-right: 70px;}
+.pr80 {padding-right: 80px;}
+
+.pt0 {padding-top: 0px !important;}
+.pt5 {padding-top: 5px;}
+.pt10 {padding-top: 10px;}
+.pt15 {padding-top: 15px;}
+.pt20 {padding-top: 20px;}
+.pt30 {padding-top: 30px;}
+.pt40 {padding-top: 40px;}
+.pt50 {padding-top: 50px;}
+.pt60 {padding-top: 60px;}
+.pt70 {padding-top: 70px;}
+.pt80 {padding-top: 80px;}
+
+.m0 {margin-rgin: 0px !important;}
+.m10 {margin-rgin: 10px;}
+.m20 {margin-rgin: 20px;}
+.m30 {margin-rgin: 30px;}
+.m40 {margin-rgin: 40px;}
+.m50 {margin-rgin: 50px;}
+.m60 {margin-rgin: 60px;}
+.m70 {margin-rgin: 70px;}
+.m80 {margin-rgin: 80px;}
+
+.mb0 {margin-bottom: 0px !important;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb26 {margin-bottom: 26px;}
+.mb30 {margin-bottom: 30px;}
+.mb36 {margin-bottom: 36px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.mb60 {margin-bottom: 60px;}
+.mb70 {margin-bottom: 70px;}
+.mb80 {margin-bottom: 80px;}
+
+
+.ml0 {margin-left: 0px !important;}
+.ml10 {margin-left: 10px;}
+.ml20 {margin-left: 20px;}
+.ml30 {margin-left: 30px;}
+.ml40 {margin-left: 40px;}
+.ml50 {margin-left: 50px;}
+.ml60 {margin-left: 60px;}
+.ml70 {margin-left: 70px;}
+.ml80 {margin-left: 80px;}
+.ml90 {margin-left: 90px;}
+.ml100 {margin-left: 100px;}
+.ml140 {margin-left: 140px;}
+
+.mr0 {margin-right: 0px !important;}
+.mr10 {margin-right: 10px;}
+.mr20 {margin-right: 20px;}
+.mr30 {margin-right: 30px;}
+.mr40 {margin-right: 40px;}
+.mr50 {margin-right: 50px;}
+.mr60 {margin-right: 60px;}
+.mr70 {margin-right: 70px;}
+.mr80 {margin-right: 80px;}
+.mr90 {margin-right: 90px;}
+.mr100 {margin-right: 100px;}
+
+.mt0 {margin-top: 0px !important;}
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt60 {margin-top: 60px;}
+.mt70 {margin-top: 70px;}
+.mt80 {margin-top: 80px;}
+.mt90 {margin-top: 90px;}
+.mt100 {margin-top: 100px;}
+
+.fz10 { font-size: 10px;  }
+.fz11 { font-size: 11px; }
+.fz12 { font-size: 12px; }
+.fz13 { font-size: 13px; }
+.fz14 { font-size: 14px; }
+.fz15 { font-size: 15px;	 }
+.fz16 { font-size: 16px; }
+.fz17 { font-size: 17px; }
+.fz18 { font-size: 18px; }
+.fz19 { font-size: 19px; }
+.fz20 { font-size: 20px; }
+.fz21 { font-size: 21px; }
+.fz22 { font-size: 22px; }
+
+// отключалк
+.no-margin{margin:0px !important}
+.no-padding{padding:0px !important}
+.no-back{background:none !important}
+.no-border {border:none !important}
+.no-bullet {list-style: none}
+
+//выравнивание
+.tal{text-align:left}
+.tac{text-align:center!important;}
+.tar{text-align:right}
+.taj{ text-align: justify;}
+
+//делает между блоками одинаковое растояние
+ul.taj {
+  margin: 0;
+  text-align: justify;
+/* Обнуляем для родителя*/
+  line-height: 0;
+  font-size: 1px; /* 1px для Opera */
+/* Лекарство для IE6-7*/
+  text-justify: newspaper;
+  zoom:1;
+/* Включаем в работу последнюю строку*/
+  text-align-last: justify;
+  &:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display:inline-block;
+    .ie7-inline-block();
+  }
+  > li  {
+
+    text-align: left;
+  /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+  /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+  /* эмуляция inline-block для IE6-7*/
+    display:inline-block;
+    .ie7-inline-block();
+    > div{
+      display:inline-block;
+      .ie7-inline-block();
+      text-align: left;
+
+    }
+  }
+}
+
+
+//вертикальное выравнивание
+.vat{vertical-align:top}
+.vam{vertical-align:middle!important;}
+.vab{vertical-align:bottom}
+.vaba{vertical-align: baseline}
+
+// выравнивание
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both; font-size: 1px; line-height: 1px;}
+.columns{width:100%; overflow:hidden; text-align:justify}
+
+// тип элемента
+.hidden{display:none}
+.show{display:block !important}
+
+.dib{
+  display:inline-block;
+  .ie7-inline-block();
+  vertical-align: top;
+}
+.inline{display: inline;}
+.block{display: block;}
+.table{display: table;}
+
+
+
+//ЦВЕТА
+
+.black{color: @black;  }
+.grayDarker{color:@grayDarker;}
+.grayDark{color: @grayDark;}
+.gray{color: @gray;}
+.grayLight{color: @grayLight;}
+.grayLighter{color: @grayLighter;}
+.white{color: @white;}
+.infoText{color: @infoText;}
+
+a.black:hover{color:darken(@black, 15%);}
+a.grayDark:hover{ color:darken(@grayDark, 15%);}
+a.gray:hover{ color:darken(@gray, 15%);}
+a.grayLight:hover{ color:darken(@grayLight, 15%);}
+a.grayLight:hover{ color:darken(@grayLight, 15%);}
+a.grayLighter:hover{ color:darken(@grayLighter, 15%);}
+a.white:hover{ color:darken(@white, 15%);}
+
+// ССЫЛКИ
+.cursor{cursor:pointer }
+
+// убрать подчеркиваня у ссылки
+.td-none{
+  text-decoration: none !important;
+}
+.td-underline {
+   text-decoration:underline;
+}
+// внуртри нее сылки
+.td-dashed{
+  text-decoration: none;
+  border-bottom:1px dashed;
+  &.active,
+  &:hover{
+    border-color:transparent;
+    text-decoration: none;
+  }
+}
+.td-dotted{
+  text-decoration: none;
+  border-bottom:1px dotted;
+  &.active,
+  &:hover{
+    border-color:transparent;
+    text-decoration: none;
+  }
+}
+
+//  <a clss=blokc >
+//      <span>  TEXT  </span>
+//  </a>
+
+.td-box-norm{
+  text-decoration: none;
+  span{
+    text-decoration: underline;
+  }
+  &:hover span{
+    text-decoration: none;
+  }
+  .active &{
+    span{
+      text-decoration: none;
+    }
+  }
+}
+.td-box-dotted{
+  text-decoration: none;
+  span{
+    text-decoration: none;
+    border-bottom:1px dotted;
+  }
+  &:hover span{
+    border-color:transparent;
+    text-decoration: none;
+  }
+  .active &{
+    span{
+      text-decoration: none;
+      border-color:transparent;
+    }
+  }
+}
+.td-box-dashed{
+  text-decoration: none;
+  span{
+    text-decoration: none;
+    border-bottom:1px dashed;
+  }
+  &:hover span{
+    border-color:transparent;
+    text-decoration: none;
+  }
+  .active &{
+    span{
+      text-decoration: none;
+      border-color:transparent;
+    }
+  }
+}
+
+
+
+// растягивает картинку по всей ширене контейнера
+.background-size-100(@url){
+
+  background: ~"url('@{url}')" no-repeat ;
+  .background-size( 100% 100%);
+  filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
+  -ms-filter:~"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{url}', sizingMethod='scale')";
+
+}
+//убераем пунктир вокруг сылок
+.btn:focus,
+a:focus,
+button:focus{
+  outline:none;
+}
+/***********************************     ТАБЛИЦЫ     ****************************************************/
+//сброс талиц
+.table-clear{
+  width:100%;
+  border:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:0;
+  padding:0;
+  td,th{
+    margin: 0;
+    padding:0;
+    vertical-align: top;
+  }
+}
+.table-no-border{
+  td,th{
+    border:none !important;
+  }
+}
+.table-no-background{
+  background:none;
+  td,th,tr{
+    background:none;
+  }
+  &:hover{
+    background:none;
+    td,th,tr{
+      background:none;
+    }
+  }
+}
