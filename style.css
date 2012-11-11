@@ -1,5 +1,6 @@
 body{
 	background-color: #dbffdb;
+	background: url('wallpaper.png');
 	height: 100%;
 	width: 100%;
 }
@@ -24,7 +25,7 @@ border: 2px ridge #4e5e6f;
 #i0, #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #del, #dev, #mul, #sub, #sum, #calc{
 	width: 150px;
 	height: 100%;
-	background: url("knopp.jpg");
+	background: url("text_bg2.jpg");
 	display: table;
 	text-align: center;
 	vertical-align: center;
@@ -32,9 +33,9 @@ border: 2px ridge #4e5e6f;
 	padding-top: 15px;
 }
  #calc{
-	width: 300px;
+	width: 302px;
 	height: 100%;
-	background: url("knopp.jpg");
+	background: url("text_bg2.jpg");
 	display: table;
 	text-align: center;
 	vertical-align: center;
