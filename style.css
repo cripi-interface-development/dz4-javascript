@@ -32,10 +32,15 @@ border: 2px ridge #4e5e6f;
 	font: 40pt bolt;
 	padding-top: 15px;
 }
+#del{
+padding-top: 35px;
+}
+
  #calc{
 	width: 302px;
 	height: 100%;
 	background: url("text_bg2.jpg");
+	background-repeat: repeat-x;
 	display: table;
 	text-align: center;
 	vertical-align: center;
@@ -75,3 +80,11 @@ border: 2px ridge #4e5e6f;
 	padding-bottom: 20px;
  }
  
+#rou{
+border: 1px solid #434343;
+padding: 2px;
+background: #e3e3e3;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+
+}
