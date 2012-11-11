@@ -1,5 +1,4 @@
 body{
-	background-color: #dbffdb;
 	background: url('wallpaper.png');
 	height: 100%;
 	width: 100%;
@@ -83,8 +82,9 @@ padding-top: 35px;
 #rou{
 border: 1px solid #434343;
 padding: 2px;
-background: #e3e3e3;
+background: url("text_bg2.jpg");
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
+
 
 }
