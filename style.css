@@ -1,0 +1,48 @@
+body{
+	background-color: #bdf08a;
+	height: 100%;
+	width: 100%;
+}
+
+table{
+	max-width:320px;
+	height: 500px;
+	background: url("knopp.jpg");
+	border-color: #4e5e6f;
+	margin-left: 25%;
+}
+
+#round {
+background-color: #a6b7a0;
+border: 1px solid #000;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px; 
+}
+
+#i0, #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #del, #dev, #mul, #sub, #sum, #calc{
+	width: 150px;
+	height: 100%;
+	background: url("knopp.jpg");
+	display: table;
+	text-align: center;
+	vertical-align: center;
+	font: 40pt bolt;	
+}
+ #calc{
+	width: 300px;
+	height: 100%;
+	background: url("knopp.jpg");
+	display: table;
+	text-align: center;
+	vertical-align: center;
+	font: 40pt bolt;	
+ }
+
+
+#result{
+height: 100%;
+display: table;
+text-align: right;
+vertical-align: center;
+font: 40pt bolt;	
+  }
