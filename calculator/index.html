@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Калькулятор</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script  src="j-query.js"></script>
+<script src="script.js"></script>
+<script src="drag.js"></script>
+<script type="text/javascript">
+$(document).ready(function (e){
+$(".more").click(function(){
+	$('ul').slideToggle('slow');
+});
+$(".help").draggable();
+});
+</script>
+</head>
+<body>
+<h1 align="center">Calculator</h1>
+<div class = 'history'>
+<p class = 'history'> History: <br></p>
+</div>
+<div class="body"> 
+    <div class="screen">
+      <div class="result">0</div>   
+    </div> 
+    <div class="button">             
+    <div class="n7">7</div>
+    <div class="n8">8</div>    
+    <div class="n9">9</div>
+    <div class="ndiv">/</div>
+    <div class="nmul">*</div>     
+    <div class="n4">4</div>
+    <div class="n5">5</div>
+    <div class="n6">6</div>
+    <div class="nminus">-</div>
+    <div class="nplus">+</div>
+    <div class="n1">1</div>   
+    <div class="n2">2</div> 
+    <div class="n3">3</div>
+    </div>
+    <div class="nEqual">=</div>
+    <div class="button">
+    <div class="n0">0</div>
+    </div>    
+    <div class="back">C</div>          
+<div>
+<div class = "help">
+<p class = "more" >Help</p>
+<ul class = "list">
+<li>Возможность ввода с клавиатуры</li>
+<li>Операции: сложение(+), вычитания(-), умножения(*), деления(/), очистка(с) и равно(=)</li>
+<li>Дробные значения можно вводить только с клавиатуры</li>
+<li>Для очистки используется клавиша "DELETE"</li>
+<li>Слева отображается история</li>
+<li>Деление на 0 НЕ ВОЗМОЖНО </li>
+<li>Всегда должно быть 2 аргумента(т.е. НЕЛЬЗЯ делать так: 2+ или 2/ )</li>
+</ul>
+</div>
+</body>
+</html>
