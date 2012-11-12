@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Калькулятор</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="calc">
+		<div id="screen">
+			<div id="calcScreen"></div>
+		</div>
+		<ul id="number">
+			<li><a href="#" onclick="prnt(1)">1</a></li>
+			<li><a href="#" onclick="prnt(2)">2</a></li>
+			<li><a href="#" onclick="prnt(3)">3</a></li>
+			<li><a href="#" onclick="prnt(4)">4</a></li>
+			<li><a href="#" onclick="prnt(5)">5</a></li>
+			<li><a href="#" onclick="prnt(6)">6</a></li>
+			<li><a href="#" onclick="prnt(7)">7</a></li>
+			<li><a href="#" onclick="prnt(8)">8</a></li>
+			<li><a href="#" onclick="prnt(9)">9</a></li>
+			<li><a href="#" onclick="prnt(0)">0</a></li>
+			<li><a href="#" onclick="prnt('.')">.</a></li>
+		</ul>
+
+		<ul id="operators">
+			<li><a href="#" onclick="reset()">c</a></li>
+			<li><a href="#" onclick="calc('division')">/</a></li>
+			<li><a href="#" onclick="calc('multiplication')">*</a></li>
+			<li><a href="#" onclick="calc('subtraction')">-</a></li>
+			<li><a href="#" onclick="calc('addition')">+</a></li>
+		</ul>
+
+		<a id="result" onclick="document.getElementById('calcScreen').innerHTML = result(); n = false"> = </a>
+	</div>
+</body>
+</html>
+
