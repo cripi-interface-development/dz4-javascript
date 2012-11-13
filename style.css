@@ -1,0 +1,107 @@
+body{
+	background: url('wallpaper.png');
+	height: 100%;
+	width: 100%;
+}
+
+table{
+	position: absolute;
+	top: 30px;
+	height: 500px;
+	background: #4e5e6f;
+	border-color: #4e5e6f;
+	margin-left: 25%;
+	text-align: right;
+}
+
+#message{
+	position: absolute;
+	left: 90px;
+	top: 180px;
+	width: 200px;
+	height: auto;
+	font: 25pt bolt;
+	padding: 10px;
+	background: url("dvpj7wd.png");
+	word-wrap: break-word;
+	border: 2px ridge #4e5e6f;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+}
+
+
+
+#round {
+background-color: white;
+border: 2px ridge #4e5e6f;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px; 
+}
+
+#i0, #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #del, #dev, #mul, #sub, #sum, #calc{
+	width: 150px;
+	height: 100%;
+	background: url("text_bg2.jpg");
+	display: table;
+	text-align: center;
+	vertical-align: center;
+	font: 40pt bolt;
+	padding-top: 15px;
+}
+#del{
+padding-top: 35px;
+}
+
+ #calc{
+	width: 302px;
+	height: 100%;
+	background: url("text_bg2.jpg");
+	background-repeat: repeat-x;
+	display: table;
+	text-align: center;
+	vertical-align: center;
+	font: 50pt bolt;
+	
+ }
+
+ #i0, #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #del, #dev, #mul, #sub, #sum, #calc:hover{
+	cursor: pointer;
+ }
+
+ 
+#expression{
+	float:left;
+	position: relative;
+	top: -25px;
+	height: 35px;
+	width: 100%;
+	max-width: 500px;
+	display: inline;
+	text-align: right;
+	vertical-align: bottom;
+	font: 25pt bolt;
+	padding-top: 20px;	
+ }
+ #result{
+	float:left;
+	position:relate;
+	top:-15px;
+	height: 35px;
+	width:100%;
+	max-width: 450px;
+	display: inline;
+	text-align: right;
+	vertical-align: center;
+	font: 35pt bolt;
+	padding-bottom: 20px;
+ }
+ 
+#rou{
+border: 1px solid #434343;
+padding: 2px;
+background: url("text_bg2.jpg");
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+
+
+}
