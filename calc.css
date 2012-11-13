@@ -1,0 +1,10 @@
+table{ border:thin #000 solid;}
+td, th {
+	border: #009 solid;
+	font-size: 2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #0C3;
+	width: 60px;
+	height: 30px;
+	vertical-align: middle;
+	text-align: center;}
