@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>КАЛЬКУЛЯТОР</title>
+</head>
+<body>
+<script language=javascript>
+var zero 	= '0';
+var one 	= '1';
+var two 	= '2';
+var three = '3';
+var four 	= '4';
+var five 	= '5';
+var six = '6';
+var seven = '7';
+var eight = '8';
+var nine 	= '9';
+var add 	= '+';
+var subtract = '-';
+var multiply = '*';
+var divide = '/';
+function compute(f)
+{
+  f.view.value = eval(f.view.value);
+}
+function getNum(f, val)
+{
+  f.view.value += val;
+}
+</script>
+<form name="calc">
+  <table width="200" border=1>
+    <tbody>
+      <tr>
+        <td width="100%"><table cellspacing=0 cellpadding=0 width="100%" border=1>
+            <tbody>
+              <tr>
+                <td><p align=center>Калькулятор</p></td>
+              </tr>
+              <tr>
+                <td width="100%">
+				<p align=center>
+                  <input type=text name="view" size=27 action="compute(this)">
+                </p>
+                </td>
+                </tr>
+                  <table cellspacing=0 cellpadding=0 border=1>
+                                          <td rowspan="2" width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, seven)" type=button value="    7    ">
+                          </p></td>
+                        <td rowspan="2" width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, eight)" type=button value="    8    ">
+                          </p></td>
+                        <td  rowspan="2" width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, nine)" type=button value="    9    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, multiply)" type=button value="    *    ">
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, divide)" type=button value="    /    ">
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, four)" type=button value="    4    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, five)" type=button value="    5    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, six)" type=button value="    6    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, subtract)" type=button value="    -    ">
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, one)" type=button value="    1    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, two)" type=button value="    2    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, three)" type=button value="    3    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, add)" type=button value="    +   ">
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" type=reset value="    c    ">
+                          </p></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="getNum(this.form, zero)" type=button value="    0    ">
+                          </p></td>
+                        <td width="25%"></td>
+                        <td width="25%"><p align=center>
+                            <input style="border: "#FFF" onclick="compute(this.form)" type=button value="    =   ">
+                          </p></td>
+                      </tr>
+                   </table>
+	        </tbody>
+        </td>
+      </tr>
+   </tbody>
+  </table>
+</form>
+</body>
+</html>
