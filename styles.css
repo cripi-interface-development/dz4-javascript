@@ -1,0 +1,15 @@
+body {
+padding:150;
+}  
+div {
+background: #87CEFA;
+width: 322 px;
+height: 316 px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+}
+input{
+font-family: "Times New Roman", serif;
+Font-weight:bold;
+font-size:31px;
+}
