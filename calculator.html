@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset=utf-8> 
+        <title>dz4</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+		<style>
+			body {
+				font: .8125em/1.5 Arial, sans-serif;
+			}
+			table 
+			{
+			  border: solid 1px #e8eef4;
+			}
+
+			table td 
+			{
+			  padding: 5px;   
+			  border: solid 1px #e8eef4;
+			}
+			
+			input[type='button'] {
+				width: 40px;
+				height: 40px;
+			}
+			
+			input.text {
+				width: 210px;
+				padding: 5px;
+				text-align: right;
+			}
+		</style>
+		<script>
+			$(document).ready(function () {
+				$('input.in').click(function () {
+					$('.text').val(calculator.text.value.replace(/^0+/, ''));
+					$('.text').val($('.text').val() + $(this).val());
+				});
+				$('input.C').click(function () {
+					$('.text').val('0');
+				});
+				$('input.result').click(function () {
+					$('.text').val(eval($('.text').val()));
+					if ($('.text').val() == Infinity) c$('.text').val("Деление на ноль невозможно");
+				});
+			});
+		</script>
+    </head>
+    <body>
+	<form name="calculator">
+		<table>
+			<tr>
+				<td colspan="4"><input type="text" name="text" class="text" value="0" readonly></td>
+			</tr>
+			<tr>
+				<td><input class="in" type="button" value="7"></td>
+				<td><input class="in" type="button" value="8"></td>
+				<td><input class="in" type="button" value="9"></td>
+				<td><input class="in" type="button" value="/"></td>
+			</tr>
+			<tr>
+				<td><input class="in" type="button" value="4"></td>
+				<td><input class="in" type="button" value="5"></td>
+				<td><input class="in" type="button" value="6"></td>
+				<td><input class="in" type="button" value="*"></td>
+			</tr>
+			<tr>
+				<td><input class="in" type="button" value="1"></td>
+				<td><input class="in" type="button" value="2"></td>
+				<td><input class="in" type="button" value="3"></td>
+				<td><input class="in" type="button" value="+"></td>
+			</tr>
+			<tr>
+				<td><input class="C" type="button" value="c"></td>
+				<td><input class="in" type="button" value="0"></td>
+				<td><input class="result" type="button" value="="></td>
+				<td><input class="in" type="button" value="-"></td>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>
