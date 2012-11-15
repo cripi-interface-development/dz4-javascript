@@ -83,14 +83,15 @@ $(document).ready(function() {
 			operation = op;
 			$('#inout').text(x + ' ' + operation);	
 		} else {
+			var res;
 			switch(operation){
-			case '+': $('#inout').text(x + y); break;
-			case '-': $('#inout').text(x - y); break;
-			case '*': $('#inout').text(x * y); break;
-			case '/': if(y != 0) $('#inout').text(x / y); else $('#inout').text('division by zero!'); break;
+			case '+':res = x+y; $('#inout').text(res); break;
+			case '-': res = x-y; $('#inout').text(res); break;
+			case '*': res = x*y; $('#inout').text(res); break;
+			case '/': if(y != 0){ res=x/y; $('#inout').text(res); } else $('#inout').text('division by zero!'); break;
 			default: $('#inout').text('something wrong');
 			}
-			x = 0; y = 0; operation = undefined;
+			x = res; y = 0; operation = undefined;
 		}
 	});
 
