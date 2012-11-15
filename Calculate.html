@@ -1,0 +1,51 @@
+﻿<html>
+
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body bgcolor="#FFFAFA">
+<table width="100px" align="center" border="1px" bordercolor=#B0C4DE>
+<tr>
+	<td> <div>
+ <table>
+   <tr>
+     <td>
+       <!--<form name="Calculator">
+         <input type="text" name="answer" size="29" value="0">    -->
+		 <form name="screen"><input type="text" name="see" size="18" value=""></input><form>
+     </tr>
+   </table>
+   <table border="2" cellspacing="4" bordercolor=#FFFAFA>
+     <tr>
+       <td><input type="button" name="7" size="200" value="  7  " onClick="document.screen.see.value += '7'"></td>
+       <td><input type="button" name="8" size="200" value="  8  " onClick="document.screen.see.value += '8'"></td>
+       <td><input type="button" name="9" size="200" value="  9   " onClick="document.screen.see.value += '9'"></td>
+       <td><input type="button" name="/" size="200" value="   /  " onClick="document.screen.see.value += '/'"></td>
+     </tr>
+     <tr>
+       <td><input type="button" name="4" size="200" value="  4  " onClick="document.screen.see.value += '4'"></td>
+       <td><input type="button" name="5" size="200" value="  5  " onClick="document.screen.see.value += '5'"></td>
+       <td><input type="button" name="6" size="200" value="  6   " onClick="document.screen.see.value += '6'"></td>
+       <td><input type="button" name="*" size="200" value="  *  " onClick="document.screen.see.value += '*'"></td>
+     </tr>
+     <tr>
+       <td><input type="button" name="1" size="200" value="  1  " onClick="document.screen.see.value += '1'"></td>
+       <td><input type="button" name="2" size="200" value="  2  " onClick="document.screen.see.value += '2'"></td>
+       <td><input type="button" name="3" size="200" value="  3   " onClick="document.screen.see.value += '3'"></td>
+       <td><input type="button" name="-" size="200" value="   -  " onClick="document.screen.see.value += '-'"></td>
+     </tr>
+	 <tr>
+	   <td><input type="button" name="=" size="200" value="  =  " onClick="document.screen.see.value = eval(document.screen.see.value)"></td>
+	   <td><input type="button" name="0" size="200" value="  0  " onClick="document.screen.see.value += '0'"></td>
+       <td><input type="button" name="-" size="200" value="  C  " onClick="document.screen.see.value = ''"></td>
+	   <td><input type="button" name="+" size="200" value="  +  " onClick="document.screen.see.value += '+'"></td>
+	 </tr>
+   </table>
+	</div> </td>
+</tr>
+</table>
+</body>
+</html>
+
