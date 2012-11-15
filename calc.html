@@ -66,9 +66,11 @@ margin-top: 1px;
 $(document).ready(function() {
 	var x = 0;
 	var y = 0;
+	var res = 0, flag = false;
 	var operation;	
 	$('div.number').click(function(event) {
 		if(operation === undefined) {
+			flag = false;
 			x = parseFloat($(this).attr('id'));
 			$('#inout').text(x);
 		} else { 
@@ -80,6 +82,7 @@ $(document).ready(function() {
 	$('div.operation').click(function(event){
 		var op = $(this).attr('id');
 		if(op !== '=') {
+			if (flag) x = res;
 			operation = op;
 			$('#inout').text(x + ' ' + operation);	
 		} else {
@@ -91,7 +94,8 @@ $(document).ready(function() {
 			case '/': if(y != 0){ res=x/y; $('#inout').text(res); } else $('#inout').text('division by zero!'); break;
 			default: $('#inout').text('something wrong');
 			}
-			x = res; y = 0; operation = undefined;
+			flag = true;
+			x = 0; y = 0; operation = undefined;
 		}
 	});
 
