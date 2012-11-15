@@ -1,0 +1,45 @@
+﻿div, form, input {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+form {
+	overflow: hidden;
+	margin: auto;
+	width: 287px;
+	height: 377px;
+}
+
+input[type="text"] {
+	width: 285px;
+	height: 75px;
+	border: 1px solid #000;
+	text-align: right;
+	font-size: xx-large;
+	padding-right: .5em;
+}
+
+input[type="button"] {
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	background-color: #FFF;
+	font-size: x-large;
+}
+
+.num {
+	float: left;
+	width: 225px;
+}
+
+.num input[type="button"] {
+	width: 75px;
+	height: 75px;
+}
+
+.opt input[type="button"] {
+	width: 60px;
+	height: 60px;
+	border-right: 1px solid #000;
+}
