@@ -71,10 +71,10 @@ $(document).ready(function() {
 	$('div.number').click(function(event) {
 		if(operation === undefined) {
 			flag = false;
-			x = parseFloat($(this).attr('id'));
+			x = x*10 + parseFloat($(this).attr('id'));
 			$('#inout').text(x);
 		} else { 
-			y = parseFloat($(this).attr('id'));
+			y = y*10 + parseFloat($(this).attr('id'));
 			$('#inout').text(x + ' ' + operation + ' ' + y); 
 
 		}
