@@ -1,6 +1,8 @@
 $(document).ready(function() {
   var expr = '';
   $('.but').click(function() {
+	if (expr === 'Division by zero')
+		expr = '';
 	var $cur = $(this).html();
 	if ($cur === 'c')
 		expr = '0'
