@@ -5,7 +5,8 @@
 	border: 1px solid #cdcdcd;
 	border-radius: 2px;
 	background: #BADBAD;
-	margin: 0 auto;
+	margin: auto;
+	margin-bottom: 30px;
 	}
 .display {
 	width: 330px;
