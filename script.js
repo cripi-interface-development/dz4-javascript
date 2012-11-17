@@ -8,11 +8,7 @@ $(document).ready(function()
      
      $('.btnNum').click(function(event)
      {
-          if( i === 0 )
-               Operands[i] += $(this).html();
-          else
-               Operands[i] += $(this).html();
-          
+          Operands[i] += $(this).html();          
           $('.display').text(parseFloat(Operands[ i ]));
     });
         
