@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <title> Калькулятор </title>
 	<link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="http://yandex.st/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="Calculate.js"></script>
 </head>
 
 <body>
 <form name="calculator" id="Form">
-    <button name="Ноль-0"    value="0" onclick="createNumber(0)"> 0 </button>
-    <button name="Точка-0"   value="." onclick="point()"> . </button>
-    <button name="Равно-0"   value="=" onclick="Operation('=')">=</button>
-    <button name="Один-1"    value="1" onclick="createNumber(1)"> 1 </button>
-    <button name="Два-1"     value="2" onclick="createNumber(2)"> 2 </button>
-    <button name="Три-1"     value="3" onclick="createNumber(3)"> 3 </button>
-    <button name="Четыре-2"  value="4" onclick="createNumber(4)"> 4 </button>
-    <button name="Пять-2"    value="5" onclick="createNumber(5)"> 5 </button>
-    <button name="Шесть-2"   value="6" onclick="createNumber(6)"> 6 </button>
-    <button name="Семь-3"    value="7" onclick="createNumber(7)"> 7 </button>
-    <button name="Восемь-3"  value="8" onclick="createNumber(8)"> 8 </button>
-    <button name="Девять-3"  value="9" onclick="createNumber(9)"> 9 </button>
-    <button name="Плюс"      value="+" onclick="Operation('+')"> + </button>
-    <button name="Минус"     value="-" onclick="Operation('-')"> - </button>
-    <button name="Умножить"  value="*" onclick="Operation('*')"> * </button>
-    <button name="Разделить" value="/" onclick="Operation('/')"> / </button>
-    <input name="res" type="text" value="0"/>
+    <button class="button_type_number" name="Ноль-0"    value="0"> 0 </button>
+    <button class="button_type_point"  name="Точка-0"   value="."> . </button>
+    <button class="button_type_znak"   name="Равно-0"   value="=">=</button>
+    <button class="button_type_number" name="Один-1"    value="1"> 1 </button>
+    <button class="button_type_number" name="Два-1"     value="2"> 2 </button>
+    <button class="button_type_number" name="Три-1"     value="3"> 3 </button>
+    <button class="button_type_number" name="Четыре-2"  value="4"> 4 </button>
+    <button class="button_type_number" name="Пять-2"    value="5"> 5 </button>
+    <button class="button_type_number" name="Шесть-2"   value="6"> 6 </button>
+    <button class="button_type_number" name="Семь-3"    value="7"> 7 </button>
+    <button class="button_type_number" name="Восемь-3"  value="8"> 8 </button>
+    <button class="button_type_number" name="Девять-3"  value="9"> 9 </button>
+    <button class="button_type_znak" name="Плюс"      value="+"> + </button>
+    <button class="button_type_znak" name="Минус"     value="-"> - </button>
+    <button class="button_type_znak" name="Умножить"  value="*"> * </button>
+    <button class="button_type_znak" name="Разделить" value="/"> / </button>
+    <input class="result" name="res" type="text" value="0"/>
 </form>
-<script type="text/javascript" src="Calculate.js"></script>
 </body>
 </html>

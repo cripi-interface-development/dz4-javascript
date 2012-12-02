@@ -1,14 +1,13 @@
 ﻿/*jslint plusplus: true, browser: true, devel: true */
 
-document.getElementById('Form').onsubmit = function() { return false; };
-
 var znak = false; // false, если до этого либо ничего не записывали, либо вводили число. true, если до этого был введен знак 
 var operand = 0; // сохраняет текущее значение
 var s = ""; // последний введенный знак0
 
-function createNumber(n) {
+function createNumber() {
     "use strict";
-    var result = (document.getElementsByName("res")[0]).value;
+    var n = this.value,
+    	result = ($(".result")).val();
 
     if (znak) {
         result = n;
@@ -20,13 +19,13 @@ function createNumber(n) {
             result = result + n;
         }
     }
-	(document.getElementsByName("res")[0]).value = result;
-	//alert("result " + result);
+	($(".result")).val(result);
 }
 
-function Operation(Op) {
+function Operation() {
     "use strict";
-    var result = (document.getElementsByName("res")[0]).value;
+    var Op = this.value,
+        result = ($(".result")).val();
     if (znak && s !== "=") {// если ввели, например, "++"
         result = operand;
     } else {
@@ -49,12 +48,12 @@ function Operation(Op) {
         result = operand;
         s = Op;
     }
-    (document.getElementsByName("res")[0]).value = result;
+    ($(".result")).val(result);
 }
 
 function point() {
     "use strict";
-    var result = (document.getElementsByName("res")[0]).value;
+    var result = ($(".result")).val();
     if (znak) {
         result = "0.";
         znak = false;
@@ -63,5 +62,24 @@ function point() {
             result = result + ".";
         }
     }
-    (document.getElementsByName("res")[0]).value = result;
+    ($(".result")).val(result);
 }
+
+$(document).ready(function () {
+    "use strict";
+    var $button_number = $(".button_type_number"),
+        $button_znak = $(".button_type_znak"),
+        $button_point = $(".button_type_point");
+
+    $('#Form').submit(function () { "use strict"; return false; });
+
+    $button_number.each(function (index, element) {
+        $(element).click(createNumber);
+    });
+    $button_znak.each(function (index, element) {
+        $(element).click(Operation);
+    });
+    $button_point.each(function (index, element) {
+        $(element).click(point);
+    });
+});
