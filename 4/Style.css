@@ -1,0 +1,66 @@
+﻿form {
+    width: 300px;
+	height: 420px;
+	position: absolute;
+	left: 50%;
+    margin-left: -150px;
+	top: 50px;
+	border: 5px solid #D0ECF4;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
+   
+}
+
+input {
+    height: 90px;
+	width: 290px;
+	font-size: 150%;
+	text-align: right;
+}
+button {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
+    height: 80px;
+	position: absolute;
+	font-size: 150%;
+	width: 75px;
+}
+button[name*="0"] {
+    bottom: 0;
+	width: 75px;
+}
+button[name*="1"] {
+    bottom: 80px;
+	width: 75px;
+}
+button[name*="2"] {
+    bottom: 160px;
+	width: 75px;
+}
+button[name*="3"] {
+    bottom: 240px;
+	width: 75px;
+}
+button[name*="Ноль"] {
+    width: 150px;
+}
+button[name*="Точка"],[name*="Три"],[name*="Шесть"],[name*="Девять"] {
+	left: 150px;
+}
+button[name*="Два"],[name*="Пять"] ,[name*="Восемь"]{
+    left: 75px;
+}
+button[name*="Равно"],[name*="Плюс"],[name*="Минус"],[name*="Умножить"],[name*="Разделить"] {
+    right: 0;
+	height: 64px;
+}
+button[name*="Плюс"] {
+    bottom: 64px;
+}
+button[name*="Минус"] {
+    bottom: 128px;
+}
+button[name*="Умножить"] {
+    bottom: 192px;
+}
+button[name*="Разделить"] {
+    bottom: 256px;
+}
